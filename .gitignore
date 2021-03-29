@@ -25,6 +25,9 @@
 .project
 .classpath
 
+.git/
+.svn/
+
 # Build #
 target/
 
