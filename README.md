@@ -1,8 +1,8 @@
 # 표준프레임워크 심플홈페이지 템플릿 변환
 
-## 1. Java Config 변환
+## 1. [Java Config 변환](./Docs/JavaConfig변환.md)
 
-### 1) Web.xml -> WebApplicationInitializer 구현체로 변환
+### 1) Web.xml -> WebApplicationInitializer 구현체로 변환 
 
 
 ### 2) context-*.xml -> @Configuration 변환
