@@ -1,4 +1,4 @@
-# 순수 자바 클래스를 이용한 시동이 가능한 이유
+# [참고] 순수 자바 클래스를 이용한 시동이 가능한 이유
 
 ## WebApplicationInitializer
 
@@ -50,7 +50,7 @@ public class SpringServletContainerInitializer implements ServletContainerInitia
 
 ```
 
-이 `SpringServletContainerInitializer` 클래스는 `@HandlesTypes` 통해 `WebApplicationInitializer.class` 를 지정하고 있다. 이때 `onStartUp()` 메소드의 인자로, 지정된 클래스 Set과 서블릿 컨텍스트 객체를 파라미터로 넣어준다.
+이 `SpringServletContainerInitializer` 클래스는 `@HandlesTypes` 통해 `WebApplicationInitializer.class` 를 지정하고 있다. 이때 `onStartUp()` 메소드의 인자로, 지정된 클래스 set과 서블릿 컨텍스트 객체를 파라미터로 넣어준다.
 
 WAS가 시작될 때 `org.springframework.web.WebApplicationInitializer` 인터페이스를 구현한 각 클래스들의 `onStartup()` 메소드가 실행되어 초기화 작업이 진행된다.
 
@@ -60,7 +60,7 @@ WAS가 시작될 때 `org.springframework.web.WebApplicationInitializer` 인터�
 
 ##  `AnnotationConfigWebApplicationContext` 설정
 
-
+Spring 3.1 부터는 `WebApplicationInitializer` 사용 시 직접 초기화 하고 `DispatcherServlet`이나 `ContextLoaderListener` 를 직접 주입 할 수 있다.
 
 ```java
 import org.springframework.web.WebApplicationInitializer;

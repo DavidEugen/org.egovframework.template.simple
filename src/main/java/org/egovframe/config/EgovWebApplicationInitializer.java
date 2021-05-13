@@ -2,11 +2,13 @@ package org.egovframe.config;
 
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;
+import javax.servlet.ServletContextListener;
 import javax.servlet.ServletException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.ContextLoaderListener;
 
 /**
  * @ClassName : EgovWebApplicationInitializer.java
@@ -47,6 +49,15 @@ public class EgovWebApplicationInitializer implements WebApplicationInitializer 
 		characterEncoding.setInitParameter("encoding", "UTF-8");
 		characterEncoding.setInitParameter("forceEncoding", "true");
 		characterEncoding.addMappingForUrlPatterns(null, false, "*.do");
+
+		// -------------------------------------------------------------
+		// Spring ServletContextListener 설정
+		// -------------------------------------------------------------
+		ServletContextListener listener = new ContextLoaderListener();
+		servletContext.addListener(listener);
+
+		// 설정파일 위치 변경
+		servletContext.setInitParameter("contextConfigLoaction", "classpath*:egovframework/spring/com/context-*.xml");
 
 
 	}
