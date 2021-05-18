@@ -2,7 +2,6 @@ package org.egovframe.config;
 
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;
-import javax.servlet.ServletContextListener;
 import javax.servlet.ServletException;
 
 import org.slf4j.Logger;
@@ -56,18 +55,10 @@ public class EgovWebApplicationInitializer implements WebApplicationInitializer 
 		// -------------------------------------------------------------
 		// Spring ServletContextListener 설정
 		// -------------------------------------------------------------
-		//		ServletContextListener listener = new ContextLoaderListener();
-		//		servletContext.addListener(listener);
-		//
-		//		// 설정파일 위치 변경
-		//		servletContext.setInitParameter("contextConfigLocation", "classpath*:egovframework/spring/com/context-*.xml");
-
 		AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
-
 		rootContext.register(ContextApp.class);
 
-		ServletContextListener listener = new ContextLoaderListener(rootContext);
-		servletContext.addListener(listener);
+		servletContext.addListener(new ContextLoaderListener(rootContext));
 
 	}
 
