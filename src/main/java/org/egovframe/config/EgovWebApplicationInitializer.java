@@ -57,7 +57,7 @@ public class EgovWebApplicationInitializer implements WebApplicationInitializer 
 		servletContext.addListener(listener);
 
 		// 설정파일 위치 변경
-		servletContext.setInitParameter("contextConfigLoaction", "classpath*:egovframework/spring/com/context-*.xml");
+		servletContext.setInitParameter("contextConfigLocation", "classpath*:egovframework/spring/com/context-*.xml");
 
 
 	}
