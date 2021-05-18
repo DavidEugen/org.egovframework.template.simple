@@ -1,4 +1,4 @@
-# Context Hierarchy(확인 필요)
+# [참고] Context Hierarchy(확인 필요)
 
 >*Context 란*
 > 필요한 정보를 포함하고 있는 설정의 집합 정도로 생각하자

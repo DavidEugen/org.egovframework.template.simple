@@ -1,11 +1,15 @@
 # JavaConfig 변환
 
-## XML -> Java Code 변환
+## 1. XML -> Java Code 변환
 
-### [WebApplicationInitial이란](./WebApplicationInitializer.md)
+### 1) Web.xml 변환
 
-### [WebApplicationInitial 변환](./WebApplicationInitializer_convert.md)
+[Context의 계층 관계](./ContextHierarchy.md)
+[WebApplicationInitial이란](./WebApplicationInitializer.md)
 
-### context-*.xml 변환
+[WebApplicationInitial 변환](./WebApplicationInitializer_convert.md)
 
-## Properties 변환  
+### 2) context-*.xml 변환
+
+## 2. Properties 변환  
+

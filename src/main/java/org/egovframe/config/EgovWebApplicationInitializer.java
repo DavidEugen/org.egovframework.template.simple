@@ -9,6 +9,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+
+import org.egovframe.config.context.ContextApp;
 
 /**
  * @ClassName : EgovWebApplicationInitializer.java
@@ -53,12 +56,18 @@ public class EgovWebApplicationInitializer implements WebApplicationInitializer 
 		// -------------------------------------------------------------
 		// Spring ServletContextListener 설정
 		// -------------------------------------------------------------
-		ServletContextListener listener = new ContextLoaderListener();
+		//		ServletContextListener listener = new ContextLoaderListener();
+		//		servletContext.addListener(listener);
+		//
+		//		// 설정파일 위치 변경
+		//		servletContext.setInitParameter("contextConfigLocation", "classpath*:egovframework/spring/com/context-*.xml");
+
+		AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
+
+		rootContext.register(ContextApp.class);
+
+		ServletContextListener listener = new ContextLoaderListener(rootContext);
 		servletContext.addListener(listener);
-
-		// 설정파일 위치 변경
-		servletContext.setInitParameter("contextConfigLocation", "classpath*:egovframework/spring/com/context-*.xml");
-
 
 	}
 
