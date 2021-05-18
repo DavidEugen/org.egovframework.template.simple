@@ -26,7 +26,7 @@ public class EgovWebServletContextListener implements ServletContextListener {
 	@Override
 	public void contextDestroyed(ServletContextEvent event) {
 		if (System.getProperty("spring.profiles.active") != null) {
-			System.setProperty("spring.profiles.active", null);
+			System.clearProperty("spring.profiles.active");
 		}
 	}
 
