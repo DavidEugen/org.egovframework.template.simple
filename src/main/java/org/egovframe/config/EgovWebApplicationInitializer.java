@@ -42,38 +42,71 @@ public class EgovWebApplicationInitializer implements WebApplicationInitializer 
 		LOGGER.debug("EgovWebApplicationInitializer START-============================================");
 
 		// -------------------------------------------------------------
+		// Spring Root Context 설정
+		// -------------------------------------------------------------
+		addRootContext(servletContext);
+
+		// -------------------------------------------------------------
+		// Spring Servlet Context 설정
+		// -------------------------------------------------------------
+		addWebServletContext(servletContext);
+
+		// -------------------------------------------------------------
 		// Egov Web ServletContextListener 설정 - System property setting
 		// -------------------------------------------------------------
 		servletContext.addListener(new org.egovframe.config.EgovWebServletContextListener());
 
 		// -------------------------------------------------------------
-		// Spring CharacterEncodingFilter 설정
+		//
 		// -------------------------------------------------------------
+		addFilters(servletContext);
+
+		LOGGER.debug("EgovWebApplicationInitializer END-============================================");
+	}
+
+	/**
+	 * @param servletContext
+	 * Root Context를 등록한다.
+	 */
+	private void addRootContext(ServletContext servletContext) {
+		AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
+		rootContext.register(ContextApp.class);
+
+		servletContext.addListener(new ContextLoaderListener(rootContext));
+	}
+
+	/**
+	 * @param servletContext
+	 * Servlet Context를 등록한다.
+	 */
+	private void addWebServletContext(ServletContext servletContext) {
+		AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
+		webApplicationContext.register(ContextWebDispatcherServlet.class);
+
+		ServletRegistration.Dynamic dispatcher = servletContext.addServlet("action",
+			new DispatcherServlet(webApplicationContext));
+		dispatcher.setLoadOnStartup(1);
+
+		dispatcher.addMapping("*.do");
+	}
+
+	/**
+	 * @param servletContext
+	 */
+	private void addFilters(ServletContext servletContext) {
+		addEncodingFilter(servletContext);
+	}
+
+	/**
+	 * @param servletContext
+	 * Spring CharacterEncodingFilter 설정
+	 */
+	private void addEncodingFilter(ServletContext servletContext) {
 		FilterRegistration.Dynamic characterEncoding = servletContext.addFilter("encodingFilter",
 			new org.springframework.web.filter.CharacterEncodingFilter());
 		characterEncoding.setInitParameter("encoding", "UTF-8");
 		characterEncoding.setInitParameter("forceEncoding", "true");
 		characterEncoding.addMappingForUrlPatterns(null, false, "*.do");
-
-		// -------------------------------------------------------------
-		// Spring ServletContextListener 설정
-		// -------------------------------------------------------------
-		AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
-		rootContext.register(ContextApp.class);
-
-		servletContext.addListener(new ContextLoaderListener(rootContext));
-
-		// -------------------------------------------------------------
-		// Spring ServletContextListener 설정
-		// -------------------------------------------------------------
-		AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
-		webApplicationContext.register(ContextWebDispatcherServlet.class);
-
-		ServletRegistration.Dynamic dispatcher = servletContext.addServlet("action", new DispatcherServlet(webApplicationContext));
-		dispatcher.setLoadOnStartup(1);
-
-		dispatcher.addMapping("*.do");
-
 	}
 
 }
