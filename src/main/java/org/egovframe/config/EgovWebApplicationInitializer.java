@@ -13,6 +13,7 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.servlet.DispatcherServlet;
 
 import org.egovframe.config.context.ContextApp;
+import org.egovframe.config.context.ContextWebDispatcherServlet;
 
 /**
  * @ClassName : EgovWebApplicationInitializer.java
@@ -65,6 +66,9 @@ public class EgovWebApplicationInitializer implements WebApplicationInitializer 
 		// -------------------------------------------------------------
 		// Spring ServletContextListener 설정
 		// -------------------------------------------------------------
+		AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
+		webApplicationContext.register(ContextWebDispatcherServlet.class);
+
 		ServletRegistration.Dynamic dispatcher = servletContext.addServlet("action", new DispatcherServlet());
 		dispatcher.setInitParameter("contextConfigLocation", "/WEB-INF/config/egovframework/springmvc/*.xml");
 		dispatcher.setLoadOnStartup(1);

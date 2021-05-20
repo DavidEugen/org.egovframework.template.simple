@@ -132,6 +132,27 @@ dispatcher.addMapping("*.do");
 
 
 
+### `@Configuration` 사용
+
+`AnnotationConfigWebApplicationContext` 를 이용하면 Java Config 를 이용한 설정으로 사용할 수 있다.
+
+<EgovWebApplicationInitializer.class>
+
+```java
+AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
+webApplicationContext.register(ContextWebDispatcherServlet.class);
+
+ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", new DispatcherServlet(webApplicationContext));
+dispatcher.setLoadOnStartup(1);
+
+dispatcher.addMapping("*.do");
+
+```
+
+
+
+
+
 
 
 출처
