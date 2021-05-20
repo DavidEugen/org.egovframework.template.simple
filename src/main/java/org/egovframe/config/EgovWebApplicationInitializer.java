@@ -92,6 +92,7 @@ public class EgovWebApplicationInitializer implements WebApplicationInitializer 
 
 	/**
 	 * @param servletContext
+	 * 필터들을 등록 한다.
 	 */
 	private void addFilters(ServletContext servletContext) {
 		addEncodingFilter(servletContext);
