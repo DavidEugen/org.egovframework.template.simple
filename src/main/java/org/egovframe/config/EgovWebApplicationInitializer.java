@@ -3,12 +3,14 @@ package org.egovframe.config;
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
 
 import org.egovframe.config.context.ContextApp;
 
@@ -59,6 +61,15 @@ public class EgovWebApplicationInitializer implements WebApplicationInitializer 
 		rootContext.register(ContextApp.class);
 
 		servletContext.addListener(new ContextLoaderListener(rootContext));
+
+		// -------------------------------------------------------------
+		// Spring ServletContextListener 설정
+		// -------------------------------------------------------------
+		ServletRegistration.Dynamic dispatcher = servletContext.addServlet("action", new DispatcherServlet());
+		dispatcher.setInitParameter("contextConfigLocation", "/WEB-INF/config/egovframework/springmvc/*.xml");
+		dispatcher.setLoadOnStartup(1);
+
+		dispatcher.addMapping("*.do");
 
 	}
 

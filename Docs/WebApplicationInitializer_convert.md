@@ -32,6 +32,8 @@ servletContext.addListener(listener);
 
 앞서 리스너는 Servlet Context가 생성하는 이벤트를 전달받는다고 했다. `onStartup()`은 초기화 시점은 정해졌지만, 종료 시점은 캐치할 수 없으므로 리스너를 등록해 놓은 것이다.
 
+
+
 ### 설정파일 위치 변경
 
 <web.xml>
@@ -45,8 +47,6 @@ servletContext.addListener(listener);
 </context-param>
 ```
 
-
-
 <EgovWebApplicationInitializer.class>
 
 ```java
@@ -55,7 +55,9 @@ servletContext.setInitParameter("contextConfigLoaction", "classpath*:egovframewo
 
 이때 기본 Root WebApplication의 contextClass는 [`XmlWebApplicationContext`](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/context/support/XmlWebApplicationContext.html)이고 기본 설정 파일 위치인 `contextConfigLoaction`은 `/WEB-INF/applicationContext.xml` 이다.
 
-### Java Config로 변경
+
+
+### `@Configuration` 사용
 
 `AnnotationConfigWebApplicationContext` 를 이용하면 Java Config 를 이용한 설정으로 사용할 수 있다.
 
@@ -89,11 +91,44 @@ public class ContextApp {
 
 
 
+## Servlet Application 등록
 
+Servlet Web Application Context는 Servlet 안에서 초기화 되고 Servlet 이 종료될 때 같이 종료 된다.
 
+이때 사용되는 Servlet 이 DispatcherServlet이다.
 
+기본의 DispatcherServlet 등록은 아래와 같이 작성한다.
 
+### 설정파일 위치 변경
 
+<web.xml>
+
+```xml
+<servlet>
+	<servlet-name>action</servlet-name>
+	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	<init-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/config/egovframework/springmvc/*.xml</param-value>
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>action</servlet-name>
+	<url-pattern>*.do</url-pattern>
+</servlet-mapping>
+```
+
+<EgovWebApplicationInitializer.class>
+
+```java
+ServletRegistration.Dynamic dispatcher = servletContext.addServlet("action", new DispatcherServlet());
+dispatcher.setInitParameter("contextConfigLocation", "/WEB-INF/config/egovframework/springmvc/*.xml");
+dispatcher.setLoadOnStartup(1);
+
+dispatcher.addMapping("*.do");
+```
 
 
 
