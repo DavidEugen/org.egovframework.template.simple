@@ -69,8 +69,7 @@ public class EgovWebApplicationInitializer implements WebApplicationInitializer 
 		AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
 		webApplicationContext.register(ContextWebDispatcherServlet.class);
 
-		ServletRegistration.Dynamic dispatcher = servletContext.addServlet("action", new DispatcherServlet());
-		dispatcher.setInitParameter("contextConfigLocation", "/WEB-INF/config/egovframework/springmvc/*.xml");
+		ServletRegistration.Dynamic dispatcher = servletContext.addServlet("action", new DispatcherServlet(webApplicationContext));
 		dispatcher.setLoadOnStartup(1);
 
 		dispatcher.addMapping("*.do");

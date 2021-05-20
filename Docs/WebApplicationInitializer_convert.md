@@ -149,7 +149,15 @@ dispatcher.addMapping("*.do");
 
 ```
 
+<ContextWebDispatcherServlet.class>
 
+```java
+@Configuration
+@ImportResource(value= { "/WEB-INF/config/egovframework/springmvc/*.xml" })
+public class ContextWebDispatcherServlet {
+
+}
+```
 
 
 
