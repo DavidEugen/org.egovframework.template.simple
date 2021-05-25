@@ -24,7 +24,7 @@
 	</bean>
 
     <!-- Exception 발생에 대한 기본Excpton처리를 위해 표준프레임워크 실행환경의 DefaultExceptionTransfer를 활용하도록  설정-->
-	<bean id="defaultExceptionHandleManager" class="egovframework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager">
+	<!-- <bean id="defaultExceptionHandleManager" class="egovframework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager">
 		<property name="reqExpMatcher">
 			<ref bean="antPathMater"/>
 		</property>
@@ -38,10 +38,10 @@
 				<ref bean="egovHandler" />
 			</list>
 		</property>
-	</bean>
+	</bean> -->
 
     <!-- Exception 발생에 대한 기타Excpton처리를 위해 표준프레임워크 실행환경의 DefaultExceptionTransfer를 활용하도록  설정-->
-	<bean id="otherExceptionHandleManager" class="egovframework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager">
+	<!-- <bean id="otherExceptionHandleManager" class="egovframework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager">
 		<property name="reqExpMatcher">
 			<ref bean="antPathMater"/>
 		</property>
@@ -55,7 +55,7 @@
 				<ref bean="otherHandler" />
 			</list>
 		</property>
-	</bean>
+	</bean> -->
 	
 	<!-- 템플릿 내에서 Exception 발생시 실제 처리를 위한 클래스 설정-->
     <!-- 
