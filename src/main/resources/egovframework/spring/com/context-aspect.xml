@@ -58,7 +58,9 @@
 	</bean>
 	
 	<!-- 템플릿 내에서 Exception 발생시 실제 처리를 위한 클래스 설정-->
+    <!-- 
     <bean id="egovHandler" class="egovframework.com.cmm.EgovComExcepHndlr" />
-    <bean id="otherHandler" class="egovframework.com.cmm.EgovComOthersExcepHndlr" />	
+    <bean id="otherHandler" class="egovframework.com.cmm.EgovComOthersExcepHndlr" /> 
+    -->	
 	
 </beans>

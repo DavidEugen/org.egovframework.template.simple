@@ -1,6 +1,7 @@
 package org.egovframe.config.context;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
 
 @Configuration
@@ -16,6 +17,9 @@ import org.springframework.context.annotation.ImportResource;
 	"classpath:egovframework/spring/com/context-validator.xml" ,
 	"classpath:egovframework/spring/com/context-whitelist.xml"
 	})
+@Import({
+	ContextAppAspect.class
+})
 public class ContextApp {
 
 }
