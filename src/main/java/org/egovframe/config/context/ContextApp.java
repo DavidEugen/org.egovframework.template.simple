@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ImportResource;
 @Configuration
 @ImportResource(value= {
 	//"classpath*:egovframework/spring/com/context-*.xml"
-	"classpath:egovframework/spring/com/context-aspect.xml" ,
+	//"classpath:egovframework/spring/com/context-aspect.xml" ,
 	"classpath:egovframework/spring/com/context-common.xml" ,
 	"classpath:egovframework/spring/com/context-datasource.xml" ,
 	"classpath:egovframework/spring/com/context-idgen.xml" ,

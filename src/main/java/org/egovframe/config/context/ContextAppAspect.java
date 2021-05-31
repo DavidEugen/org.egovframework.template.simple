@@ -4,16 +4,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.util.AntPathMatcher;
 
 import egovframework.com.cmm.EgovComExcepHndlr;
 import egovframework.com.cmm.EgovComOthersExcepHndlr;
+import egovframework.com.cmm.interceptor.AopExceptionTransfer;
 import egovframework.rte.fdl.cmmn.aspect.ExceptionTransfer;
 import egovframework.rte.fdl.cmmn.exception.handler.ExceptionHandler;
 import egovframework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager;
 import egovframework.rte.fdl.cmmn.exception.manager.ExceptionHandlerService;
 
 @Configuration
+@EnableAspectJAutoProxy
 public class ContextAppAspect {
 
 	@Autowired
@@ -62,6 +65,13 @@ public class ContextAppAspect {
 			defaultExceptionHandleManager, otherExceptionHandleManager
 		});
 		return exceptionTransfer;
+	}
+
+	@Bean
+	public AopExceptionTransfer aopExceptionTransfer(ExceptionTransfer exceptionTransfer) {
+		AopExceptionTransfer aopExceptionTransfer = new AopExceptionTransfer();
+		aopExceptionTransfer.setExceptionTransfer(exceptionTransfer);
+		return aopExceptionTransfer;
 	}
 
 }
