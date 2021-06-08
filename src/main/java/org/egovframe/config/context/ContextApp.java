@@ -19,7 +19,8 @@ import org.springframework.context.annotation.ImportResource;
 	})
 @Import({
 	ContextAppAspect.class,
-	ContextAppCommon.class
+	ContextAppCommon.class,
+	ContextAppDatasource.class
 })
 public class ContextApp {
 
