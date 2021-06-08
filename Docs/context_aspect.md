@@ -99,12 +99,12 @@ Advice와 Target이 결합되어서 Proxy를 만드는 과정
 스프링 설정 내 여러번 사용 가능
 
 ```
-	<beans xmlns="http://www.springframework.org/schema/beans" ...>
-	    <aop:config>
-		<aop:pointcut …/>
-		</aop:aspect …></aop:aspect>
-	    </aop:config>
-	</beans>
+<beans xmlns="http://www.springframework.org/schema/beans" ...>
+    <aop:config>
+    <aop:pointcut …/>
+    </aop:aspect …></aop:aspect>
+    </aop:config>
+</beans>
 ```
 
 ```<aop:pointcut>```
@@ -125,8 +125,8 @@ Advice와 Target이 결합되어서 Proxy를 만드는 과정
 	스프링 컨테이너는 ```<tx:advice>```엘리먼트를 해석하여 트랜잭션 관리 기능의 advice를 생성한다.
 	txAdvice 설정에 따라 동작이 달라진다.
 	문제는 advice 아이디는 확인되지만 메소드 이름은 확인 할 방법이 없다.
-	이럴
-	
+
+
 advice의 동작 시점
 	* Before : 비지니스 메소드 실행 전 동작 ; <aop:before>
 	* After
@@ -134,7 +134,6 @@ advice의 동작 시점
 		* After Throwing : 비지니스 메소드 실행 중 예외가 발생하면 동작(try~catch 블록에서 catch 블록에 해당) ; <aop:after-throwing>
 		* After : 실행 된 후 무조건 실행(try~catch~finally 블록에서 finally 블록에 해당) ; <aop:after>
 	* Around : 비지니스 메소드 실행 전후에 처리할 로직을 삽입할 수 있음 <aop::after-around>
-
 
 ``` ```
 ``` ```
