@@ -16,9 +16,9 @@
     </bean> -->
     
     <!-- datasource 설정(propertyConfigurer 활용) -->
-    <!-- <alias name="dataSource-${Globals.DbType}" alias="dataSource" />
-    <alias name="dataSource-${Globals.DbType}" alias="egov.dataSource" /> -->
-    
+<!--     <alias name="dataSource-${Globals.DbType}" alias="dataSource" />
+    <alias name="dataSource-${Globals.DbType}" alias="egov.dataSource" />
+ -->    
 	<!-- hsql -->
     <!-- <jdbc:embedded-database id="dataSource-hsql" type="HSQL">
 		<jdbc:script location= "classpath:/db/shtdb.sql"/>

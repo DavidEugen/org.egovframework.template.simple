@@ -1,13 +1,15 @@
 package org.egovframe.config.context;
 
+import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
 
 import org.apache.commons.dbcp2.BasicDataSource;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
+import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 
@@ -17,20 +19,43 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 }) //CAUTION: min JDK 8
 public class ContextAppDatasource {
 
-	@Value("${Globals.DbType}")
+//	@Value("${Globals.DbType}")
+//	private String dbType;
+//
+//	@Value("${Globals.DriverClassName}")
+//	private String className;
+//
+//	@Value("${Globals.Url}")
+//	private String url;
+//
+//	@Value("${Globals.UserName}")
+//	private String userName;
+//
+//	@Value("${Globals.Password}")
+//	private String password;
+
+	@Autowired
+    Environment env;
+
 	private String dbType;
 
-	@Value("${Globals.DriverClassName}")
 	private String className;
 
-	@Value("${Globals.Url}")
 	private String url;
 
-	@Value("${Globals.UserName}")
 	private String userName;
 
-	@Value("${Globals.Password}")
 	private String password;
+
+	@PostConstruct
+    void init(){
+		dbType = env.getProperty("Globals.DbType");
+		//Exception 처리 필요
+		className = env.getProperty("Globals."+ dbType+".DriverClassName");
+		url = env.getProperty("Globals."+ dbType+".Url");
+		userName = env.getProperty("Globals."+ dbType+".UserName");
+		password = env.getProperty("Globals."+ dbType+".Password");
+	}
 
 	/**
 	 * @return [dataSource 설정] HSQL 설정

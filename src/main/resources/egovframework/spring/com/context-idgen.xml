@@ -80,7 +80,7 @@
     <bean name="egovWikiBookmarkIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovWikiBookmarkIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -97,7 +97,7 @@
     <bean name="egovRequestOfferIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovRequestOfferIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -113,7 +113,7 @@
     <bean name="egovRssTagManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovRssTagManageIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -130,7 +130,7 @@
     <bean name="egovNoteManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovNoteManageIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -147,7 +147,7 @@
     <bean name="egovNoteTrnsmitIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovNoteTrnsmitIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -164,7 +164,7 @@
     <bean name="egovNoteRecptnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovNoteRecptnIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -182,7 +182,7 @@
     <bean name="egovSystemCntcIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovSystemCntcIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -199,7 +199,7 @@
     <bean name="egovCntcInsttIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovCntcInsttIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -216,7 +216,7 @@
     <bean name="egovCntcSystemIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovCntcSystemIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -233,7 +233,7 @@
     <bean name="egovCntcServiceIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovCntcServiceIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -250,7 +250,7 @@
     <bean name="egovCntcMessageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovCntcMessageIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -267,7 +267,7 @@
     <bean name="egovCntcMessageItemIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovCntcMessageItemIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -284,7 +284,7 @@
     <bean name="egovInsttCodeRecptnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
         <property name="tableName"  value="INSTT_CODE_OPERT"/>
@@ -294,7 +294,7 @@
     <bean name="egovAdministCodeRecptnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
         <property name="tableName"  value="ADMIN_CODE_OPERT"/>
@@ -304,7 +304,7 @@
     <bean name="egovPopupManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="egovPopupManageIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -321,7 +321,7 @@
     <bean name="egovSrchwrdManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="srchwrdManageIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -337,7 +337,7 @@
     <bean name="egovSrchwrdIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="srchwrdIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -355,7 +355,7 @@
     <bean name="egovAdministrationWordIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="administrationWordIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -372,7 +372,7 @@
     <bean name="egovIndvdlInfoPolicyIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="indvdlInfoPolicyIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -389,7 +389,7 @@
     <bean name="egovUnityLinkIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="unityLinkIdMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -406,7 +406,7 @@
     <bean name="egovOnlineMenualIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="onlineMenualMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -423,7 +423,7 @@
     <bean name="egovOnlinePollManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="onlinePollManageMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -439,7 +439,7 @@
     <bean name="egovOnlinePollItemIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="onlinePollItemMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -455,7 +455,7 @@
     <bean name="egovOnlinePollResultIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="onlinePollResultMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -472,7 +472,7 @@
     <bean name="egovIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="mixPrefixSample" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="ids"/>
@@ -492,7 +492,7 @@
     <bean name="egovNttIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="nttIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -506,7 +506,7 @@
     <bean name="egovClbIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="clbStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -522,7 +522,7 @@
     <bean name="egovCmmntyIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="cmmntyStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -538,7 +538,7 @@
     <bean name="egovUsrCnfrmIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="usrCnfrmStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -554,7 +554,7 @@
     <bean name="egovMailMsgIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="mailMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -570,7 +570,7 @@
     <bean name="egovRestDeIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
         <property name="tableName"  value="RESTDE_ID"/>
@@ -580,7 +580,7 @@
     <bean name="egovWordDicaryIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="wordDicaryStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -599,7 +599,7 @@
     <bean name="egovMgtIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="mgtMsgtrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -616,7 +616,7 @@
     <bean name="egovEventInfoIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="mgtEventInfotrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -633,7 +633,7 @@
     <bean name="egovExtrlhrInfoIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="mgtExtrlhrInfotrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -650,7 +650,7 @@
         <bean name="egovQustnrTmplatManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="QustnrTmplatManageInfotrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -666,7 +666,7 @@
     <bean name="egovQustnrManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="QustnrManageInfotrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -682,7 +682,7 @@
     <bean name="egovQustnrQestnManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="QustnrQestnManageInfotrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -698,7 +698,7 @@
     <bean name="egovQustnrItemManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="QustnrItemManageInfotrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -714,7 +714,7 @@
     <bean name="qustnrRespondManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="QustnrRespondManageInfotrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -731,7 +731,7 @@
     <bean name="qustnrRespondInfoIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="QustnrRespondInfotrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -748,7 +748,7 @@
     <bean name="diaryManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="DiaryManageInfotrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -765,7 +765,7 @@
     <bean name="egovSiteManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="siteManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -784,7 +784,7 @@
     <bean name="egovRecomendSiteManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="recomendSiteManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -803,7 +803,7 @@
     <bean name="egovHpcmManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="hpcmManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -822,7 +822,7 @@
     <bean name="egovNewsManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="newsManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -841,7 +841,7 @@
     <bean name="egovFaqManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="faqManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -860,7 +860,7 @@
         <bean name="egovNcrdIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="ncrdIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -877,7 +877,7 @@
     <bean name="egovAdbkIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="adbkIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -892,7 +892,7 @@
     <bean name="egovAdbkUserIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="adbkUserIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -909,7 +909,7 @@
     <bean name="egovGroupIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="groupIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -928,7 +928,7 @@
     <bean name="egovRoleIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="roleIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -947,7 +947,7 @@
     <bean name="egovStplatManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="stplatManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -966,7 +966,7 @@
     <bean name="egovCpyrhtPrtcPolicyIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="cpyrhtPrtcPolicyStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -985,7 +985,7 @@
     <bean name="egovQnaManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="qnaManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1004,7 +1004,7 @@
     <bean name="egovCnsltManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="cnsltManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1023,7 +1023,7 @@
     <bean name="egovLoginLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="loginLogStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1042,7 +1042,7 @@
     <bean name="egovSysLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="sysLogStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1061,7 +1061,7 @@
     <bean name="egovWebLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="webLogStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1080,7 +1080,7 @@
     <bean name="egovTrsmrcvLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="trsmrcvLogStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1099,7 +1099,7 @@
     <bean name="egovBannerIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="bannerIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1118,7 +1118,7 @@
     <bean name="egovLoginScrinImageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="loginScrinImageIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1137,7 +1137,7 @@
     <bean name="egovMainImageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="mainImageIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1156,7 +1156,7 @@
     <bean name="egovIntnetSvcGuidanceIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="mainImageIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1175,7 +1175,7 @@
     <bean name="egovIndvdlPgeIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="cntntsIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1193,7 +1193,7 @@
     <bean name="egovReprtStatsIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="reprtStatsIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1212,7 +1212,7 @@
     <bean name="egovDtaUseStatsIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="dtaUseStatsIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1230,7 +1230,7 @@
     <bean name="egovSmsIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="smsStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1246,7 +1246,7 @@
     <bean name="egovScrapIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="scrapStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1263,7 +1263,7 @@
     <bean name="egovDeptManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="orgnztIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1282,7 +1282,7 @@
     <bean name="egovNtwrkIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="ntwrkIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1301,7 +1301,7 @@
     <bean name="egovServerEqpmnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="ServerEqpmnIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1320,7 +1320,7 @@
     <bean name="egovServerIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="ServerIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1339,7 +1339,7 @@
     <bean name="egovTroblIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="TroblIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1359,7 +1359,7 @@
     <bean name="egovSynchrnServerIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="SynchrnServerIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1379,7 +1379,7 @@
     <bean name="egovMtgPlaceManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="mtgPlaceManageIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1398,7 +1398,7 @@
     <bean name="egovMtgPlaceResveIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="mtgPlaceResveIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1417,7 +1417,7 @@
     <bean name="egovEventManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="eventManageEventIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1436,7 +1436,7 @@
     <bean name="egovEventAtdrnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="eventAtdrnApplcntIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1455,7 +1455,7 @@
     <bean name="egovRwardManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="rwardManageIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1474,7 +1474,7 @@
     <bean name="egovCtsnnManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="ctsnnManageIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1493,7 +1493,7 @@
     <bean name="egovAnnvrsryManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="annvrsryManageIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1513,7 +1513,7 @@
     <bean name="egovLeaderSchdulIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="LeaderSchdulStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1531,7 +1531,7 @@
     <bean name="egovDeptJobBxIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="DeptJobBxStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1549,7 +1549,7 @@
     <bean name="egovDeptJobIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="DeptJobStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1567,7 +1567,7 @@
     <bean name="egovWikMnthngReprtIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="WikMnthngReprtStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1585,7 +1585,7 @@
     <bean name="egovMemoTodoIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="MemoTodoStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1603,7 +1603,7 @@
     <bean name="egovMemoReprtIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="MemoReprtStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1621,7 +1621,7 @@
     <bean name="egovInfrmlSanctnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy" ref="InfrmlSanctnStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1639,7 +1639,7 @@
     <bean name="egovDbMntrngLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="dbMntrngLogIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1658,7 +1658,7 @@
     <bean name="egovTrsmrcvMntrngLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="trsmrcvMntrngLogIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1677,7 +1677,7 @@
     <bean name="egovBatchOpertIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="batchOpertIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1695,7 +1695,7 @@
     <bean name="egovBatchSchdulIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="batchSchdulIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1713,7 +1713,7 @@
     <bean name="egovBatchResultIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="batchResultIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1731,7 +1731,7 @@
     <bean name="egovFileSysMntrngIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="fileSysMntrngIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1750,7 +1750,7 @@
     <bean name="egovNtwrkSvcMntrngLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="ntwrkSvcMntrngLogIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1769,7 +1769,7 @@
     <bean name="egovFileSysMntrngLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="fileSysMntrngLogIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1788,7 +1788,7 @@
     <bean name="egovProxySvcIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="ProxySvcIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1807,7 +1807,7 @@
     <bean name="egovProxyLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="ProxyLogIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1826,7 +1826,7 @@
     <bean name="egovDamManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="damManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1845,7 +1845,7 @@
     <bean name="egovBackupOpertIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="backupOpertIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1863,7 +1863,7 @@
     <bean name="egovBackupResultIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="backupResultIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1881,7 +1881,7 @@
     <bean name="egovServerResrceMntrngLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="ServerResrceMntrngLogIdStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1900,7 +1900,7 @@
     <bean name="egovHttpManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="httpManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1919,7 +1919,7 @@
     <bean name="egovHttpLogManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="httLManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1938,7 +1938,7 @@
     <bean name="egovProcessMonIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="procManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
@@ -1957,7 +1957,7 @@
     <bean name="egovProcessMonLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
-        <property name="dataSource" ref="egov.dataSource" />
+        <property name="dataSource" ref="egovDataSource" />
         <property name="strategy"   ref="prolManageStrategy" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>

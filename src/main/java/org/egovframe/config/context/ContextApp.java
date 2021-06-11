@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ImportResource;
 	//"classpath*:egovframework/spring/com/context-*.xml"
 	//"classpath:egovframework/spring/com/context-aspect.xml" ,
 	//"classpath:egovframework/spring/com/context-common.xml" ,
-	"classpath:egovframework/spring/com/context-datasource.xml" ,
+	//"classpath:egovframework/spring/com/context-datasource.xml" ,
 	"classpath:egovframework/spring/com/context-idgen.xml" ,
 	"classpath:egovframework/spring/com/context-properties.xml" ,
 	"classpath:egovframework/spring/com/context-sqlMap.xml" ,
@@ -20,7 +20,8 @@ import org.springframework.context.annotation.ImportResource;
 @Import({
 	ContextAppAspect.class,
 	ContextAppCommon.class,
-	ContextAppDatasource.class
+	ContextAppDatasource.class,
+	ContextAppIdGen.class
 })
 public class ContextApp {
 
