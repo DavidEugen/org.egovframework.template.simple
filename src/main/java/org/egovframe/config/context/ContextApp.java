@@ -10,8 +10,8 @@ import org.springframework.context.annotation.ImportResource;
 	//"classpath:egovframework/spring/com/context-aspect.xml" ,
 	//"classpath:egovframework/spring/com/context-common.xml" ,
 	//"classpath:egovframework/spring/com/context-datasource.xml" ,
-	"classpath:egovframework/spring/com/context-idgen.xml" ,
-	"classpath:egovframework/spring/com/context-properties.xml" ,
+	//"classpath:egovframework/spring/com/context-idgen.xml" ,
+	//"classpath:egovframework/spring/com/context-properties.xml" ,
 	"classpath:egovframework/spring/com/context-sqlMap.xml" ,
 	"classpath:egovframework/spring/com/context-transaction.xml" ,
 	"classpath:egovframework/spring/com/context-validator.xml" ,
@@ -21,7 +21,8 @@ import org.springframework.context.annotation.ImportResource;
 	ContextAppAspect.class,
 	ContextAppCommon.class,
 	ContextAppDatasource.class,
-	ContextAppIdGen.class
+	ContextAppIdGen.class,
+	ContextAppProperties.class
 })
 public class ContextApp {
 
