@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
 	<!-- 첨부파일 ID Generation  Config-->
-    <bean name="egovFileIdGnrService"
+    <!-- <bean name="egovFileIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="dataSource" />
@@ -11,17 +11,17 @@
         <property name="blockSize"  value="10"/>
         <property name="table"      value="IDS"/>
         <property name="tableName"  value="FILE_ID"/>
-    </bean>
+    </bean> -->
     <!-- 첨부파일 ID Generation  Strategy Config -->
-    <bean name="fileStrategy"
+    <!-- <bean name="fileStrategy"
         class="egovframework.rte.fdl.idgnr.impl.strategy.EgovIdGnrStrategyImpl">
         <property name="prefix" value="FILE_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- 게시판마스터 ID Generation  Config-->
-    <bean name="egovBBSMstrIdGnrService"
+<!--     <bean name="egovBBSMstrIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="dataSource" />
@@ -29,17 +29,17 @@
         <property name="blockSize"  value="10"/>
         <property name="table"      value="IDS"/>
         <property name="tableName"  value="BBS_ID"/>
-    </bean>
+    </bean> -->
     <!-- 게시판마스터 ID Generation  Strategy Config -->
-    <bean name="bbsMstrStrategy"
+<!--     <bean name="bbsMstrStrategy"
         class="egovframework.rte.fdl.idgnr.impl.strategy.EgovIdGnrStrategyImpl">
         <property name="prefix" value="BBSMSTR_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- 게시판템플릿 ID Generation  Config-->
-    <bean name="egovTmplatIdGnrService"
+   <!--  <bean name="egovTmplatIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="dataSource" />
@@ -47,17 +47,17 @@
         <property name="blockSize"  value="10"/>
         <property name="table"      value="IDS"/>
         <property name="tableName"  value="TMPLAT_ID"/>
-    </bean>
+    </bean> -->
     <!-- 게시판템플릿 ID Generation  Strategy Config -->
-    <bean name="tmplatStrategy"
+    <!-- <bean name="tmplatStrategy"
         class="egovframework.rte.fdl.idgnr.impl.strategy.EgovIdGnrStrategyImpl">
         <property name="prefix" value="TMPLAT_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
 			
     <!-- 부서일정 ID Generation  Config-->
-    <bean name="deptSchdulManageIdGnrService"
+    <!-- <bean name="deptSchdulManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="dataSource" />
@@ -65,19 +65,19 @@
         <property name="blockSize"  value="10"/>
         <property name="table"      value="IDS"/>
         <property name="tableName"  value="SCHDUL_ID"/>
-    </bean>
+    </bean> -->
     <!-- 부서일정 ID Generation  Strategy Config -->
-    <bean name="DeptSchdulManageStrategy"
+    <!-- <bean name="DeptSchdulManageStrategy"
         class="egovframework.rte.fdl.idgnr.impl.strategy.EgovIdGnrStrategyImpl">
         <property name="prefix" value="SCHDUL_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     
     <!-- 공통컴포넌트 3차사업 IDGEN -->
     <!-- 위키북마크 -->
-    <bean name="egovWikiBookmarkIdGnrService"
+    <!-- <bean name="egovWikiBookmarkIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -91,10 +91,10 @@
         <property name="prefix" value="WIKI" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- 지식정보제공/지식정보요청 -->
-    <bean name="egovRequestOfferIdGnrService"
+    <!-- <bean name="egovRequestOfferIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -108,9 +108,9 @@
         <property name="prefix" value="KNO_ID2" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- RSS관리 -->
-    <bean name="egovRssTagManageIdGnrService"
+    <!-- <bean name="egovRssTagManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -124,10 +124,10 @@
         <property name="prefix" value="RSS_ID" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- 쪽지관리 -->
-    <bean name="egovNoteManageIdGnrService"
+   <!--  <bean name="egovNoteManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -141,10 +141,10 @@
         <property name="prefix" value="NOTE_ID" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- 보낸쪽지함관리 -->
-    <bean name="egovNoteTrnsmitIdGnrService"
+    <!-- <bean name="egovNoteTrnsmitIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -158,10 +158,10 @@
         <property name="prefix" value="NOTE_TR" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- 받은쪽지함관리 -->
-    <bean name="egovNoteRecptnIdGnrService"
+    <!-- <bean name="egovNoteRecptnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -175,11 +175,11 @@
         <property name="prefix" value="NOTE_RE" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- 공통컴포넌트 2차사업 IDGEN -->
     <!-- 시스템연계 -->
-    <bean name="egovSystemCntcIdGnrService"
+<!--     <bean name="egovSystemCntcIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -193,10 +193,10 @@
         <property name="prefix" value="CNTC" />
         <property name="cipers" value="4" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
 
     <!-- 연계기관 -->
-    <bean name="egovCntcInsttIdGnrService"
+<!--     <bean name="egovCntcInsttIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -211,9 +211,9 @@
         <property name="cipers" value="5" />
         <property name="fillChar" value="0" />
     </bean>
-
+ -->
     <!-- 연계시스템 -->
-    <bean name="egovCntcSystemIdGnrService"
+    <!-- <bean name="egovCntcSystemIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -227,10 +227,10 @@
         <property name="prefix" value="SYS" />
         <property name="cipers" value="5" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
 
     <!-- 연계서비스 -->
-    <bean name="egovCntcServiceIdGnrService"
+<!--     <bean name="egovCntcServiceIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -244,10 +244,10 @@
         <property name="prefix" value="SVC" />
         <property name="cipers" value="5" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
 
     <!-- 연계메시지 -->
-    <bean name="egovCntcMessageIdGnrService"
+<!--     <bean name="egovCntcMessageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -261,10 +261,10 @@
         <property name="prefix" value="MSG" />
         <property name="cipers" value="17" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
 
     <!-- 연계메시지항목 -->
-    <bean name="egovCntcMessageItemIdGnrService"
+   <!--  <bean name="egovCntcMessageItemIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -278,30 +278,30 @@
         <property name="prefix" value="ITM" />
         <property name="cipers" value="17" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
 
     <!-- 기관코드 수신 작업일련번호 -->
-    <bean name="egovInsttCodeRecptnIdGnrService"
+   <!--  <bean name="egovInsttCodeRecptnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
         <property name="tableName"  value="INSTT_CODE_OPERT"/>
-    </bean>
+    </bean> -->
 
     <!-- 행정코드 수신 작업일련번호 -->
-    <bean name="egovAdministCodeRecptnIdGnrService"
+    <!-- <bean name="egovAdministCodeRecptnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
         <property name="tableName"  value="ADMIN_CODE_OPERT"/>
-    </bean>
+    </bean> -->
 
     <!-- 팝업창관리 -->
-    <bean name="egovPopupManageIdGnrService"
+   <!--  <bean name="egovPopupManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -315,10 +315,10 @@
         <property name="prefix" value="POPUP_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- 최근검색어관리 -->
-    <bean name="egovSrchwrdManageIdGnrService"
+    <!-- <bean name="egovSrchwrdManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -332,9 +332,9 @@
         <property name="prefix" value="SRCMGR_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 최근검색어 -->
-    <bean name="egovSrchwrdIdGnrService"
+<!--     <bean name="egovSrchwrdIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -348,11 +348,11 @@
         <property name="prefix" value="SRC_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     
     <!-- 행정전문용어사전 -->
-    <bean name="egovAdministrationWordIdGnrService"
+    <!-- <bean name="egovAdministrationWordIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -366,10 +366,10 @@
         <property name="prefix" value="ADMINIST_" />
         <property name="cipers" value="11" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean> --> 
     
     <!-- 개정정보보호정책확인 -->
-    <bean name="egovIndvdlInfoPolicyIdGnrService"
+    <!-- <bean name="egovIndvdlInfoPolicyIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -383,10 +383,10 @@
         <property name="prefix" value="INDVDL_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     
     <!-- 통합링크 -->
-    <bean name="egovUnityLinkIdGnrService"
+   <!--  <bean name="egovUnityLinkIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -400,10 +400,10 @@
         <property name="prefix" value="ULINK_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     
     <!-- 온라인메뉴얼 -->
-    <bean name="egovOnlineMenualIdGnrService"
+    <!-- <bean name="egovOnlineMenualIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -417,10 +417,10 @@
         <property name="prefix" value="OMUL_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean> --> 
     
     <!-- 온라인POLL관리 -->      
-    <bean name="egovOnlinePollManageIdGnrService"
+    <!-- <bean name="egovOnlinePollManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -434,9 +434,9 @@
         <property name="prefix" value="POLLMGR_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 온라인POLL항목 -->
-    <bean name="egovOnlinePollItemIdGnrService"
+    <!-- <bean name="egovOnlinePollItemIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -450,9 +450,9 @@
         <property name="prefix" value="POLLIEM_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 온라인POLL결과-->
-    <bean name="egovOnlinePollResultIdGnrService"
+    <!-- <bean name="egovOnlinePollResultIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -466,10 +466,10 @@
         <property name="prefix" value="POLLRUT_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     
     <!-- TO BE DLEETED START-->
-    <bean name="egovIdGnrService"
+    <!-- <bean name="egovIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -484,12 +484,12 @@
         <property name="prefix" value="SAMPLE-" />
         <property name="cipers" value="5" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- TO BE DLEETED END-->
     
        
     <!-- 게시판용 NTT_ID 생성 -->
-    <bean name="egovNttIdGnrService"
+    <!-- <bean name="egovNttIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -501,9 +501,9 @@
     <bean name="nttIdStrategy"
         class="egovframework.rte.fdl.idgnr.impl.strategy.EgovIdGnrStrategyImpl">
         <property name="cipers" value="20" />
-    </bean> 
+    </bean>  -->
         
-    <bean name="egovClbIdGnrService"
+    <!-- <bean name="egovClbIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -517,9 +517,9 @@
         <property name="prefix" value="CLB_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
         
-    <bean name="egovCmmntyIdGnrService"
+<!--     <bean name="egovCmmntyIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -533,9 +533,9 @@
         <property name="prefix" value="CMMNTY_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>         
+    </bean>  -->        
 
-    <bean name="egovUsrCnfrmIdGnrService"
+    <!-- <bean name="egovUsrCnfrmIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -549,9 +549,9 @@
         <property name="prefix" value="USRCNFRM_" />
         <property name="cipers" value="11" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>      -->
                 
-    <bean name="egovMailMsgIdGnrService"
+    <!-- <bean name="egovMailMsgIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -565,19 +565,19 @@
         <property name="prefix" value="MAILMSG_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
             
-    <bean name="egovRestDeIdGnrService"
+    <!-- <bean name="egovRestDeIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
         <property name="blockSize"  value="10"/>
         <property name="table"      value="COMTECOPSEQ"/>
         <property name="tableName"  value="RESTDE_ID"/>
-    </bean>
+    </bean> -->
             
     <!-- WordDicary... START-->         
-    <bean name="egovWordDicaryIdGnrService"
+    <!-- <bean name="egovWordDicaryIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -592,11 +592,11 @@
         <property name="prefix" value="WORDDICARY_" />
         <property name="cipers" value="9" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean> -->     
     <!-- WordDicary... END-->   
 
     <!-- 회의관리 -->   
-    <bean name="egovMgtIdGnrService"
+<!--     <bean name="egovMgtIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -610,10 +610,10 @@
         <property name="prefix" value="MTG_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     
     <!-- 행사/이벤트/켐페인 -->     
-    <bean name="egovEventInfoIdGnrService"
+    <!-- <bean name="egovEventInfoIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -627,10 +627,10 @@
         <property name="prefix" value="EVENT_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     
     <!-- 외부인사정보 -->     
-    <bean name="egovExtrlhrInfoIdGnrService"
+<!--     <bean name="egovExtrlhrInfoIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -644,10 +644,10 @@
         <property name="prefix" value="EXTRLHR_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
 
     <!-- 설문템플릿 -->  
-        <bean name="egovQustnrTmplatManageIdGnrService"
+        <!-- <bean name="egovQustnrTmplatManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -661,9 +661,9 @@
         <property name="prefix" value="QTMPLA_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 설문관리 -->
-    <bean name="egovQustnrManageIdGnrService"
+   <!--  <bean name="egovQustnrManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -677,9 +677,9 @@
         <property name="prefix" value="QMANAGE_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 설문문항  -->
-    <bean name="egovQustnrQestnManageIdGnrService"
+    <!-- <bean name="egovQustnrQestnManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -693,9 +693,9 @@
         <property name="prefix" value="QQESTN_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 설문항목 -->
-    <bean name="egovQustnrItemManageIdGnrService"
+    <!-- <bean name="egovQustnrItemManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -709,9 +709,9 @@
         <property name="prefix" value="QESITM_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 설문응답자정보 -->
-    <bean name="qustnrRespondManageIdGnrService"
+   <!--  <bean name="qustnrRespondManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -725,10 +725,10 @@
         <property name="prefix" value="QRPD_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- 설문조사 -->
-    <bean name="qustnrRespondInfoIdGnrService"
+    <!-- <bean name="qustnrRespondInfoIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -742,10 +742,10 @@
         <property name="prefix" value="QRSPNS_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- 일정관리 -->
-    <bean name="diaryManageIdGnrService"
+    <!-- <bean name="diaryManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -759,10 +759,10 @@
         <property name="prefix" value="DIARY_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     
     <!-- SiteManage... START-->         
-    <bean name="egovSiteManageIdGnrService"
+    <!-- <bean name="egovSiteManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -777,11 +777,11 @@
         <property name="prefix" value="SITE_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>  -->    
     <!-- SiteManage... END-->   
     
     <!-- RecomendSiteManage... START-->         
-    <bean name="egovRecomendSiteManageIdGnrService"
+    <!-- <bean name="egovRecomendSiteManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -796,11 +796,11 @@
         <property name="prefix" value="RECOMEND_" />
         <property name="cipers" value="11" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>    -->  
     <!-- RecomendSiteManage... END-->   
 
     <!-- HPCMManage... START-->         
-    <bean name="egovHpcmManageIdGnrService"
+    <!-- <bean name="egovHpcmManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -815,11 +815,11 @@
         <property name="prefix" value="HPCM_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>  -->    
     <!-- HPCMManage... END-->
     
     <!-- NewsManage... START-->         
-    <bean name="egovNewsManageIdGnrService"
+    <!-- <bean name="egovNewsManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -834,11 +834,11 @@
         <property name="prefix" value="NEWS_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>    -->  
     <!-- NewsManage... END-->       
     
     <!-- FaqManage... START-->          
-    <bean name="egovFaqManageIdGnrService"
+    <!-- <bean name="egovFaqManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -853,11 +853,11 @@
         <property name="prefix" value="FAQ_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>  -->    
     <!-- FaqManage... END-->        
     
     <!--  명함 -->
-        <bean name="egovNcrdIdGnrService"
+        <!-- <bean name="egovNcrdIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -872,9 +872,9 @@
         <property name="prefix" value="NCRD_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 주소록 -->
-    <bean name="egovAdbkIdGnrService"
+    <!-- <bean name="egovAdbkIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -888,8 +888,8 @@
         <property name="prefix" value="ADBK_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean> 
-    <bean name="egovAdbkUserIdGnrService"
+    </bean>  -->
+<!--     <bean name="egovAdbkUserIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -903,10 +903,10 @@
         <property name="prefix" value="ADBKUSER_" />
         <property name="cipers" value="11" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     
     <!--  그룹 -->
-    <bean name="egovGroupIdGnrService"
+    <!-- <bean name="egovGroupIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -921,11 +921,11 @@
         <property name="prefix" value="GROUP_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 그룹 --> 
 
     <!--  롤 ID -->
-    <bean name="egovRoleIdGnrService"
+    <!-- <bean name="egovRoleIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -940,11 +940,11 @@
         <property name="prefix" value="" />
         <property name="cipers" value="6" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 롤 ID -->
 
     <!-- StplatManage... START-->           
-    <bean name="egovStplatManageIdGnrService"
+    <!-- <bean name="egovStplatManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -959,11 +959,11 @@
         <property name="prefix" value="STPLAT_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>    -->  
     <!-- StplatManage... END-->     
 
     <!-- CpyrhtPrtcPolicy... START-->           
-    <bean name="egovCpyrhtPrtcPolicyIdGnrService"
+   <!--  <bean name="egovCpyrhtPrtcPolicyIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -978,11 +978,11 @@
         <property name="prefix" value="CPYRHT_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>   -->   
     <!-- CpyrhtPrtcPolicy... END-->
     
     <!-- Qna... START-->            
-    <bean name="egovQnaManageIdGnrService"
+    <!-- <bean name="egovQnaManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -997,11 +997,11 @@
         <property name="prefix" value="QA_" />
         <property name="cipers" value="17" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>      -->
     <!-- Qna... END-->      
             
     <!-- Cnslt... START-->          
-    <bean name="egovCnsltManageIdGnrService"
+    <!-- <bean name="egovCnsltManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1016,11 +1016,11 @@
         <property name="prefix" value="CNSLT_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean> -->     
     <!-- Cnslt... END-->        
 
     <!-- Login Log... START-->          
-    <bean name="egovLoginLogIdGnrService"
+    <!-- <bean name="egovLoginLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1035,11 +1035,11 @@
         <property name="prefix" value="LOGIN_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>  -->    
     <!-- Login Log... END-->        
         
     <!-- System Log... START-->         
-    <bean name="egovSysLogIdGnrService"
+    <!-- <bean name="egovSysLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1054,11 +1054,11 @@
         <property name="prefix" value="SYSLOG_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>  -->    
     <!-- System Log... END-->       
         
     <!-- Web Log... START-->            
-    <bean name="egovWebLogIdGnrService"
+    <!-- <bean name="egovWebLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1073,11 +1073,11 @@
         <property name="prefix" value="WEBLOG_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>      -->
     <!-- Web Log... END-->      
         
     <!-- Trsmrcv Log... START-->            
-    <bean name="egovTrsmrcvLogIdGnrService"
+    <!-- <bean name="egovTrsmrcvLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1092,11 +1092,11 @@
         <property name="prefix" value="TRSMRCV_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>      -->
     <!-- Trsmrcv Log... END-->      
         
     <!--  배너 ID -->
-    <bean name="egovBannerIdGnrService"
+    <!-- <bean name="egovBannerIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1111,11 +1111,11 @@
         <property name="prefix" value="BANNER_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 배너 ID -->
 
     <!--  로그인화면이미지 ID -->
-    <bean name="egovLoginScrinImageIdGnrService"
+    <!-- <bean name="egovLoginScrinImageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1130,11 +1130,11 @@
         <property name="prefix" value="LSI_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean> --> 
     <!-- 로그인화면이미지 ID -->
 
     <!-- 메인화면이미지 ID -->
-    <bean name="egovMainImageIdGnrService"
+    <!-- <bean name="egovMainImageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1149,11 +1149,11 @@
         <property name="prefix" value="MSI_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 메인화면이미지 ID -->
 
     <!-- 인터넷서비스안내 ID -->
-    <bean name="egovIntnetSvcGuidanceIdGnrService"
+    <!-- <bean name="egovIntnetSvcGuidanceIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1168,11 +1168,11 @@
         <property name="prefix" value="ISG_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 인터넷서비스안내 ID -->  
     
     <!--  마이페이지 컨텐츠 ID -->
-    <bean name="egovIndvdlPgeIdGnrService"
+   <!--  <bean name="egovIndvdlPgeIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1186,11 +1186,11 @@
         <property name="prefix" value="C" />
         <property name="cipers" value="19" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 마이페이지 컨텐츠 ID -->       
 
     <!-- 보고서통계 ID -->
-    <bean name="egovReprtStatsIdGnrService"
+    <!-- <bean name="egovReprtStatsIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1205,11 +1205,11 @@
         <property name="prefix" value="RS_" />
         <property name="cipers" value="3" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 보고서통계 ID -->        
     
     <!-- 자료이용현황통계 ID -->
-    <bean name="egovDtaUseStatsIdGnrService"
+    <!-- <bean name="egovDtaUseStatsIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1224,10 +1224,10 @@
         <property name="prefix" value="DUS_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 자료이용현황통계 ID -->    
     
-    <bean name="egovSmsIdGnrService"
+    <!-- <bean name="egovSmsIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1241,9 +1241,9 @@
         <property name="prefix" value="SMS_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>  -->    
     
-    <bean name="egovScrapIdGnrService"
+    <!-- <bean name="egovScrapIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1257,10 +1257,10 @@
         <property name="prefix" value="SCRIP_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean>                 
+    </bean>  -->                
     
     <!--  부서 ID -->
-    <bean name="egovDeptManageIdGnrService"
+    <!-- <bean name="egovDeptManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1275,11 +1275,11 @@
         <property name="prefix" value="ORGNZT_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 부서 ID -->  
     
     <!--  네트워크 ID -->
-    <bean name="egovNtwrkIdGnrService"
+    <!-- <bean name="egovNtwrkIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1294,11 +1294,11 @@
         <property name="prefix" value="NID_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 네트워크 ID -->     
     
     <!-- 서버장비 ID -->
-    <bean name="egovServerEqpmnIdGnrService"
+    <!-- <bean name="egovServerEqpmnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1313,11 +1313,11 @@
         <property name="prefix" value="SVE_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 서버장비 ID -->
     
     <!-- 서버 ID -->
-    <bean name="egovServerIdGnrService"
+   <!--  <bean name="egovServerIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1332,11 +1332,11 @@
         <property name="prefix" value="SRV_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 서버 ID -->
     
     <!-- 장애 ID -->
-    <bean name="egovTroblIdGnrService"
+    <!-- <bean name="egovTroblIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1351,12 +1351,12 @@
         <property name="prefix" value="TBM_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 장애 ID --> 
 
 
     <!--  동기화대상 서버 ID -->
-    <bean name="egovSynchrnServerIdGnrService"
+    <!-- <bean name="egovSynchrnServerIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1371,12 +1371,12 @@
         <property name="prefix" value="SSY_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean> --> 
     <!--  동기화대상 서버 ID -->
 
 
     <!--  회의실관리 ID -->
-    <bean name="egovMtgPlaceManageIdGnrService"
+    <!-- <bean name="egovMtgPlaceManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1391,11 +1391,11 @@
         <property name="prefix" value="MTGP_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean> --> 
     <!-- 회의실관리 ID -->   
   
     <!--  회의실예약 ID -->
-    <bean name="egovMtgPlaceResveIdGnrService"
+    <!-- <bean name="egovMtgPlaceResveIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1410,11 +1410,11 @@
         <property name="prefix" value="RESVE_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 회의실예약 ID -->
 
     <!--  행사 ID -->
-    <bean name="egovEventManageIdGnrService"
+   <!--  <bean name="egovEventManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1429,11 +1429,11 @@
         <property name="prefix" value="EVENT_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 행사 ID -->
 
     <!--  행사접수 ID -->
-    <bean name="egovEventAtdrnIdGnrService"
+    <!-- <bean name="egovEventAtdrnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1448,11 +1448,11 @@
         <property name="prefix" value="APPLCNT_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 행사접수 ID -->
 
     <!--  포상 ID -->
-    <bean name="egovRwardManageIdGnrService"
+    <!-- <bean name="egovRwardManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1467,11 +1467,11 @@
         <property name="prefix" value="RWARD_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 포상 ID -->
 
     <!--  경조사 ID -->
-    <bean name="egovCtsnnManageIdGnrService"
+<!--     <bean name="egovCtsnnManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1483,14 +1483,14 @@
 
     <bean name="ctsnnManageIdStrategy"
         class="egovframework.rte.fdl.idgnr.impl.strategy.EgovIdGnrStrategyImpl">
-        <property name="prefix" value="CTSNN_" />
+        <property name="prefix" value="RWARD_" />
         <property name="cipers" value="14" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 경조사 ID -->
 
     <!--  기념일 ID -->
-    <bean name="egovAnnvrsryManageIdGnrService"
+    <!-- <bean name="egovAnnvrsryManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1505,12 +1505,12 @@
         <property name="prefix" value="ANN_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean> --> 
     <!-- 기념일 ID -->
 
 
     <!-- 간부일정 -->
-    <bean name="egovLeaderSchdulIdGnrService"
+    <!-- <bean name="egovLeaderSchdulIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1524,11 +1524,11 @@
         <property name="prefix" value="LDSCHDUL_" />
         <property name="cipers" value="11" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 간부일정 -->
     
     <!-- 부서업무함 -->
-    <bean name="egovDeptJobBxIdGnrService"
+<!--     <bean name="egovDeptJobBxIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1542,11 +1542,11 @@
         <property name="prefix" value="DX_" />
         <property name="cipers" value="3" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 부서업무함 -->
     
     <!-- 부서업무 -->
-    <bean name="egovDeptJobIdGnrService"
+    <!-- <bean name="egovDeptJobIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1560,11 +1560,11 @@
         <property name="prefix" value="DEPTJOB_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 부서업무 -->
     
     <!-- 주간/월간 보고 -->
-    <bean name="egovWikMnthngReprtIdGnrService"
+   <!--  <bean name="egovWikMnthngReprtIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1578,11 +1578,11 @@
         <property name="prefix" value="WR" />
         <property name="cipers" value="4" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 주간/월간 보고 -->
     
     <!-- 메모 할일 -->
-    <bean name="egovMemoTodoIdGnrService"
+   <!--  <bean name="egovMemoTodoIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1596,11 +1596,11 @@
         <property name="prefix" value="MEMOTODO_" />
         <property name="cipers" value="11" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 메모 할일 -->
     
     <!-- 메모 보고 -->
-    <bean name="egovMemoReprtIdGnrService"
+    <!-- <bean name="egovMemoReprtIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1614,11 +1614,11 @@
         <property name="prefix" value="MR" />
         <property name="cipers" value="4" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 메모 보고 -->
     
     <!-- 약식 결재 -->
-    <bean name="egovInfrmlSanctnIdGnrService"
+    <!-- <bean name="egovInfrmlSanctnIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1632,11 +1632,11 @@
         <property name="prefix" value="SANCTN_" />
         <property name="cipers" value="13" />
         <property name="fillChar" value="0" />
-    </bean>
+    </bean> -->
     <!-- 약식 결재 -->
 
     <!--  DB서비스모니터링 ID -->
-    <bean name="egovDbMntrngLogIdGnrService"
+    <!-- <bean name="egovDbMntrngLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1651,11 +1651,11 @@
         <property name="prefix" value="" />
         <property name="cipers" value="20" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- DB서비스모니터링 ID -->   
 
     <!--  송수신모니터링 ID -->
-    <bean name="egovTrsmrcvMntrngLogIdGnrService"
+    <!-- <bean name="egovTrsmrcvMntrngLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1670,11 +1670,11 @@
         <property name="prefix" value="" />
         <property name="cipers" value="20" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 송수신모니터링 ID -->     
 
     <!--  배치작업 ID -->
-    <bean name="egovBatchOpertIdGnrService"
+    <!-- <bean name="egovBatchOpertIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1688,11 +1688,11 @@
         <property name="prefix" value="BAT" />
         <property name="cipers" value="17" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean> --> 
     <!-- 배치작업 ID -->
     
     <!-- 배치스케줄 ID -->
-    <bean name="egovBatchSchdulIdGnrService"
+    <!-- <bean name="egovBatchSchdulIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1706,11 +1706,11 @@
         <property name="prefix" value="BSC" />
         <property name="cipers" value="17" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 배치스케줄 ID -->     
 
     <!-- 배치결과 ID -->
-    <bean name="egovBatchResultIdGnrService"
+    <!-- <bean name="egovBatchResultIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1724,11 +1724,11 @@
         <property name="prefix" value="BRT" />
         <property name="cipers" value="17" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 배치결과 ID -->   
       
     <!--  파일시스템모니터링 ID -->
-    <bean name="egovFileSysMntrngIdGnrService"
+    <!-- <bean name="egovFileSysMntrngIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1743,11 +1743,11 @@
         <property name="prefix" value="FILESYS_" />
         <property name="cipers" value="12" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 파일시스템모니터링 ID --> 
     
     <!--  네트워크서비스모니터링 로그 ID -->
-    <bean name="egovNtwrkSvcMntrngLogIdGnrService"
+    <!-- <bean name="egovNtwrkSvcMntrngLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1762,11 +1762,11 @@
         <property name="prefix" value="" />
         <property name="cipers" value="20" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 네트워크서비스모니터링 로그 ID -->    
     
     <!--  파일시스템모니터링 로그 ID -->
-    <bean name="egovFileSysMntrngLogIdGnrService"
+   <!--  <bean name="egovFileSysMntrngLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1781,11 +1781,11 @@
         <property name="prefix" value="" />
         <property name="cipers" value="20" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 파일시스템모니터링 로그 ID --> 
     
     <!--  프록시서비스 ID -->
-    <bean name="egovProxySvcIdGnrService"
+    <!-- <bean name="egovProxySvcIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1800,11 +1800,11 @@
         <property name="prefix" value="PXY_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!--  프록시서비스 ID -->
         
     <!--  프록시Log ID -->
-    <bean name="egovProxyLogIdGnrService"
+    <!-- <bean name="egovProxyLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1819,11 +1819,11 @@
         <property name="prefix" value="PLG_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!--  프록시Log ID -->
 
     <!-- knoManage... START-->          
-    <bean name="egovDamManageIdGnrService"
+    <!-- <bean name="egovDamManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1838,11 +1838,11 @@
         <property name="prefix" value="DMID_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>   -->   
     <!-- NewsManage... END-->   
                     
     <!--  백업작업 ID -->
-    <bean name="egovBackupOpertIdGnrService"
+    <!-- <bean name="egovBackupOpertIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1856,11 +1856,11 @@
         <property name="prefix" value="BAK" />
         <property name="cipers" value="17" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 백업작업 ID -->
 
     <!--  백업결과 ID -->
-    <bean name="egovBackupResultIdGnrService"
+    <!-- <bean name="egovBackupResultIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1874,11 +1874,11 @@
         <property name="prefix" value="BRT" />
         <property name="cipers" value="17" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean>  -->
     <!-- 백업결과 ID -->
 
     <!--  서버자원 모니터링 Log ID -->
-    <bean name="egovServerResrceMntrngLogIdGnrService"
+    <!-- <bean name="egovServerResrceMntrngLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1893,11 +1893,11 @@
         <property name="prefix" value="LOG_" />
         <property name="cipers" value="16" />
         <property name="fillChar" value="0" />
-    </bean> 
+    </bean> --> 
     <!--  서버자원 모니터링 ID -->
     
     <!-- HttpMon... START-->            
-    <bean name="egovHttpManageIdGnrService"
+    <!-- <bean name="egovHttpManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1912,11 +1912,11 @@
         <property name="prefix" value="HTTP_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean> -->     
     <!-- HttpMon... END-->
     
     <!-- HttpMonLog... START-->         
-    <bean name="egovHttpLogManageIdGnrService"
+    <!-- <bean name="egovHttpLogManageIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1931,11 +1931,11 @@
         <property name="prefix" value="HTTL_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>   -->   
     <!-- HttpMonLog... END-->   
     
     <!-- ProcessMon... START-->         
-    <bean name="egovProcessMonIdGnrService"
+<!--     <bean name="egovProcessMonIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1950,11 +1950,11 @@
         <property name="prefix" value="PROC_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>  -->    
     <!-- ProcessMon... END-->
     
     <!-- ProcessMonLog... START-->          
-    <bean name="egovProcessMonLogIdGnrService"
+    <!-- <bean name="egovProcessMonLogIdGnrService"
         class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
         destroy-method="destroy">
         <property name="dataSource" ref="egovDataSource" />
@@ -1969,7 +1969,7 @@
         <property name="prefix" value="PROL_" />
         <property name="cipers" value="15" />
         <property name="fillChar" value="0" />
-    </bean>     
+    </bean>      -->
     <!-- ProcessMonLog... END-->      
     
 </beans>
