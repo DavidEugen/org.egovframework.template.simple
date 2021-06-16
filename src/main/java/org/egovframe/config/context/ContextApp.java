@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ImportResource;
 	//"classpath:egovframework/spring/com/context-properties.xml" ,
 	"classpath:egovframework/spring/com/context-sqlMap.xml" ,
 	//"classpath:egovframework/spring/com/context-transaction.xml" ,
-	"classpath:egovframework/spring/com/context-validator.xml" ,
+	//"classpath:egovframework/spring/com/context-validator.xml" ,
 	"classpath:egovframework/spring/com/context-whitelist.xml"
 	})
 @Import({
@@ -23,7 +23,8 @@ import org.springframework.context.annotation.ImportResource;
 	ContextAppDatasource.class,
 	ContextAppIdGen.class,
 	ContextAppProperties.class,
-	ContextAppTransaction.class
+	ContextAppTransaction.class,
+	ContextAppValidator.class
 })
 public class ContextApp {
 
