@@ -1,8 +1,10 @@
 package egovframework.com.cmm.service.impl;
 
-import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
+import egovframework.rte.psl.dataaccess.EgovAbstractMapper;
 
 import javax.annotation.Resource;
+
+import org.apache.ibatis.session.SqlSessionFactory;
 
 import com.ibatis.sqlmap.client.SqlMapClient;
 
@@ -22,13 +24,12 @@ import com.ibatis.sqlmap.client.SqlMapClient;
  *   2011. 9. 23.   서준식        최초 생성
  * </pre>
  */
-public abstract class EgovComAbstractDAO extends EgovAbstractDAO{
+public abstract class EgovComAbstractDAO extends EgovAbstractMapper{
 	
+	@Override
+	@Resource(name="egov.sqlSession")
+	public void setSqlSessionFactory(SqlSessionFactory sqlSession) {
+		super.setSqlSessionFactory(sqlSession);
+	}
 	
-	@Resource(name="egov.sqlMapClient")
-	public void setSuperSqlMapClient(SqlMapClient sqlMapClient) {
-        super.setSuperSqlMapClient(sqlMapClient);
-    }
-	
-
 }

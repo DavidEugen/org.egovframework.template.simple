@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
     <!-- lob Handler -->
-    <bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" />
+    <!-- <bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" /> -->
 
 	<!-- SqlMap setup for iBATIS Database Layer -->
-	<bean id="sqlMapClient" class="egovframework.rte.psl.orm.ibatis.SqlMapClientFactoryBean">
+<!-- 	<bean id="sqlMapClient" class="egovframework.rte.psl.orm.ibatis.SqlMapClientFactoryBean">
 		<property name="configLocations">
             <list>
                 <value>classpath:/egovframework/sqlmap/config/${Globals.DbType}/*.xml</value>
@@ -14,10 +14,10 @@
         </property>
 		<property name="dataSource" ref="dataSource"/>
 		<property name="lobHandler" ref="lobHandler"/>
-	</bean>
+	</bean> -->
 	
 	<!-- SqlMap setup for iBATIS Database Layer -->
-    <bean id="egov.sqlMapClient" class="egovframework.rte.psl.orm.ibatis.SqlMapClientFactoryBean">
+<!--     <bean id="egov.sqlMapClient" class="egovframework.rte.psl.orm.ibatis.SqlMapClientFactoryBean">
         <property name="configLocations">
             <list>
                 <value>classpath:/egovframework/sqlmap/config/${Globals.DbType}/*.xml</value>
@@ -25,6 +25,6 @@
         </property>
         <property name="dataSource" ref="dataSource"/>
         <property name="lobHandler" ref="lobHandler"/>
-    </bean>
+    </bean> -->
 			
 </beans>	

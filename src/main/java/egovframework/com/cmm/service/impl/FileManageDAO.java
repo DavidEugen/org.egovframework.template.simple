@@ -121,7 +121,7 @@ public class FileManageDAO extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public int getMaxFileSN(FileVO fvo) throws Exception {
-		return (Integer) select("FileManageDAO.getMaxFileSN", fvo);
+		return (Integer) selectOne("FileManageDAO.getMaxFileSN", fvo);
 	}
 
 	/**
@@ -132,7 +132,7 @@ public class FileManageDAO extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public FileVO selectFileInf(FileVO fvo) throws Exception {
-		return (FileVO) select("FileManageDAO.selectFileInf", fvo);
+		return (FileVO) selectOne("FileManageDAO.selectFileInf", fvo);
 	}
 
 	/**
@@ -165,7 +165,7 @@ public class FileManageDAO extends EgovComAbstractDAO {
 	 * @throws Exception
 	 */
 	public int selectFileListCntByFileNm(FileVO fvo) throws Exception {
-		return (Integer) select("FileManageDAO.selectFileListCntByFileNm", fvo);
+		return (Integer) selectOne("FileManageDAO.selectFileListCntByFileNm", fvo);
 	}
 
 	/**

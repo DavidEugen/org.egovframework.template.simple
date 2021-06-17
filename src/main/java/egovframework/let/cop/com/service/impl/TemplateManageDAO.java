@@ -4,7 +4,7 @@ import java.util.List;
 import egovframework.let.cop.com.service.TemplateInf;
 import egovframework.let.cop.com.service.TemplateInfVO;
 
-import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
+import egovframework.rte.psl.dataaccess.EgovAbstractMapper;
 
 import org.springframework.stereotype.Repository;
 
@@ -26,7 +26,7 @@ import org.springframework.stereotype.Repository;
  * </pre>
  */
 @Repository("TemplateManageDAO")
-public class TemplateManageDAO extends EgovAbstractDAO {
+public class TemplateManageDAO extends EgovAbstractMapper {
 
     /**
      * 템플릿 정보를 삭제한다.
@@ -78,7 +78,7 @@ public class TemplateManageDAO extends EgovAbstractDAO {
      * @throws Exception
      */
     public int selectTemplateInfsCnt(TemplateInfVO tmplatInfVO) throws Exception {
-	return (Integer)select("TemplateManageDAO.selectTemplateInfsCnt", tmplatInfVO);
+	return (Integer)selectOne("TemplateManageDAO.selectTemplateInfsCnt", tmplatInfVO);
     }
 
     /**
@@ -89,7 +89,7 @@ public class TemplateManageDAO extends EgovAbstractDAO {
      * @throws Exception
      */
     public TemplateInfVO selectTemplateInf(TemplateInfVO tmplatInfVO) throws Exception {
-	return (TemplateInfVO)select("TemplateManageDAO.selectTemplateInf", tmplatInfVO);
+	return (TemplateInfVO)selectOne("TemplateManageDAO.selectTemplateInf", tmplatInfVO);
 
     }
 

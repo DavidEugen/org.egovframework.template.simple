@@ -5,7 +5,7 @@ import java.util.Map;
 import egovframework.com.cmm.ComDefaultVO;
 import egovframework.let.cop.smt.sim.service.IndvdlSchdulManageVO;
 
-import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
+import egovframework.rte.psl.dataaccess.EgovAbstractMapper;
 
 import org.springframework.stereotype.Repository;
 
@@ -23,7 +23,7 @@ import org.springframework.stereotype.Repository;
  * @created 09-6-2011 오전 10:08:07
  */
 @Repository("indvdlSchdulManageDao")
-public class IndvdlSchdulManageDao extends EgovAbstractDAO {
+public class IndvdlSchdulManageDao extends EgovAbstractMapper {
 
 
     /**
@@ -54,7 +54,7 @@ public class IndvdlSchdulManageDao extends EgovAbstractDAO {
 	 * @throws Exception
 	 */
 	public IndvdlSchdulManageVO selectIndvdlSchdulManageDetailVO(IndvdlSchdulManageVO indvdlSchdulManageVO) throws Exception{
-		return (IndvdlSchdulManageVO)select("IndvdlSchdulManage.selectIndvdlSchdulManageDetailVO", indvdlSchdulManageVO);
+		return (IndvdlSchdulManageVO)selectOne("IndvdlSchdulManage.selectIndvdlSchdulManageDetailVO", indvdlSchdulManageVO);
 	}
 
     /**
@@ -84,7 +84,7 @@ public class IndvdlSchdulManageDao extends EgovAbstractDAO {
 	 * @throws Exception
 	 */
 	public int selectIndvdlSchdulManageListCnt(ComDefaultVO searchVO) throws Exception{
-		return (Integer)select("IndvdlSchdulManage.selectIndvdlSchdulManageCnt", searchVO);
+		return (Integer)selectOne("IndvdlSchdulManage.selectIndvdlSchdulManageCnt", searchVO);
 	}
 
     /**

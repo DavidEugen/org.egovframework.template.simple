@@ -2,7 +2,7 @@ package egovframework.let.cop.bbs.service.impl;
 import egovframework.let.cop.bbs.service.BoardMaster;
 import egovframework.let.cop.bbs.service.BoardMasterVO;
 
-import egovframework.rte.psl.dataaccess.EgovAbstractDAO;
+import egovframework.rte.psl.dataaccess.EgovAbstractMapper;
 
 import org.springframework.stereotype.Repository;
 
@@ -24,15 +24,15 @@ import org.springframework.stereotype.Repository;
  *  </pre>
  */
 @Repository("BBSAddedOptionsDAO")
-public class BBSAddedOptionsDAO extends EgovAbstractDAO {
+public class BBSAddedOptionsDAO extends EgovAbstractMapper {
 
     /**
      * 신규 게시판 추가기능 정보를 등록한다.
      * 
      * @param BoardMaster
      */
-    public String insertAddedOptionsInf(BoardMaster boardMaster) throws Exception {
-	return (String)insert("BBSAddedOptionsDAO.insertAddedOptionsInf", boardMaster);
+    public int insertAddedOptionsInf(BoardMaster boardMaster) throws Exception {
+	return (int)insert("BBSAddedOptionsDAO.insertAddedOptionsInf", boardMaster);
     }
     
     /**
@@ -41,7 +41,7 @@ public class BBSAddedOptionsDAO extends EgovAbstractDAO {
      * @param BoardMasterVO
      */
     public BoardMasterVO selectAddedOptionsInf(BoardMaster vo) throws Exception {
-	return (BoardMasterVO)select("BBSAddedOptionsDAO.selectAddedOptionsInf", vo);
+	return (BoardMasterVO)selectOne("BBSAddedOptionsDAO.selectAddedOptionsInf", vo);
     }
     
     /**
